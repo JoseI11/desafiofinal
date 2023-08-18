@@ -15,7 +15,7 @@ const config ={
     sessionSecret: "auto45",
     clientID:"Iv1.b6e8eed3962c6879",
     clientSecret:"c4cedaacb19a6174b7202900f50e218e94560055",
-    callbackUrl:"",
+    callbackUrl:"http://localhost:8080/api/sessions/githubcallback",
     mode:"false",
     jwtSecret:"auto4555",
     cookieName:"jwtCookie",
