@@ -17,7 +17,7 @@ const config ={
     clientSecret:process.env.CLIENT_SECRET,
     callbackUrl:process.env.CALLBACK_URL,
     mode:process.env.DEVELOPMENT_MODE,
-    jwtSecret: process.env.JWT_SECRET,
+    jwtSecret: "auto4555",
     cookieName:process.env.COOKIE_NAME,
     loggermode:process.env.LOGGER,
     adminEmail:process.env.ADMIN_EMAIL,
@@ -30,7 +30,7 @@ const config ={
     accountsid:process.env.ACCOUNT_SID,
     authtoken:process.env.AUTH_TOKEN,
     phonenumber:process.env.PHONE_NUMBER,
-    
+
     
 }
 export default config
