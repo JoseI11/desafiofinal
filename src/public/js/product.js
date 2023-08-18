@@ -5,8 +5,7 @@ let cId = document.getElementById("cid").value;
 
 let pId = document.getElementById('pid').value;
 let stock = document.getElementById('stock').value;
-// addToCart.forEach((form) => {
-const home = document.getElementById("home");
+
 formButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
