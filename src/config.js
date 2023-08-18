@@ -15,7 +15,7 @@ const config ={
     sessionSecret: "auto45",
     clientID:"Iv1.b6e8eed3962c6879",
     clientSecret:"c4cedaacb19a6174b7202900f50e218e94560055",
-    callbackUrl:"http://localhost:8080/api/sessions/githubcallback",
+    callbackUrl:"https://desafiofinal-m6ra-dev.fl0.io/api/sessions/githubcallback",
     mode:"false",
     jwtSecret:"auto4555",
     cookieName:"jwtCookie",

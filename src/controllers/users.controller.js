@@ -110,7 +110,7 @@ export const githubCallback = async (req, res) => {
         .send({ status: 'error', error: 'Failed to generate JWT token' })
     }
 
-    return res.cookie(cookieName, token, { httpOnly: true }).redirect('/')
+    return res.cookie(cookieName, token, { httpOnly: true }).redirect('/products')
   } catch (error) {
     req.logger.error(`Failed to handle GitHub callback with error: ${error}`)
     return res
