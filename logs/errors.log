@@ -421,3 +421,14 @@
 {"level":"info","message":"GET in /thumbnails/1681689657952-Gabinete-mid-tower_1.png - 20:02:52"}
 {"level":"info","message":"GET in /thumbnails/1681689704267-Gabinete-gigmatek_1.png - 20:02:52"}
 {"level":"info","message":"GET in /js/logoutfunction.js - 20:02:52"}
+{"level":"debug","message":"GET in /api/sessions/githubcallback?code=c88aa8b2144c509e6993 - 20:21:03"}
+{"level":"debug","message":"GET in /products - 20:21:04"}
+{"level":"debug","message":"GET in /css/styleProducts.css - 20:21:04"}
+{"level":"debug","message":"GET in /js/products.js - 20:21:04"}
+{"level":"debug","message":"GET in /thumbnails/1681689657952-Gabinete-mid-tower_1.png - 20:21:04"}
+{"level":"debug","message":"GET in /thumbnails/1681689704267-Gabinete-gigmatek_1.png - 20:21:04"}
+{"level":"debug","message":"GET in /js/logoutfunction.js - 20:21:04"}
+{"level":"debug","message":"GET in /api/sessions/logout - 20:21:07"}
+{"level":"debug","message":"GET in / - 20:21:09"}
+{"level":"debug","message":"GET in /css/styleProducts.css - 20:21:09"}
+{"level":"debug","message":"GET in /js/login.js - 20:21:09"}

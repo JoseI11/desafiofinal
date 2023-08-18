@@ -15,7 +15,7 @@ const config ={
     sessionSecret: secret,
     clientID:process.env.CLIENT_ID,
     clientSecret:process.env.CLIENT_SECRET,
-    callbackUrl:'http://localhost:8080/api/sessions/githubcallback',
+    callbackUrl:'https://desafiofinal-lpv4-dev.fl0.io/api/sessions/githubcallback',
     mode:process.env.DEVELOPMENT_MODE,
     jwtSecret: "auto4555",
     cookieName:process.env.COOKIE_NAME,
