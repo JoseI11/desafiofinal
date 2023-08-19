@@ -15,11 +15,11 @@ formButton.addEventListener("click", async (e) => {
   const title = document.getElementById("title")
 
   try {
-    let response = fetch(`/api/carts/${cId}/product/${pId}`, {
+    let response = await  fetch(`/api/carts/${cId}/product/${pId}`, {
       method: "POST",
     })
-    const data = await response.json()
-    if (parseInt(stock) >= 1) {
+
+
       if (response.ok) {
         Swal.fire({
           title: "Product added to cart!",
@@ -29,12 +29,8 @@ formButton.addEventListener("click", async (e) => {
           icon: "success",
 
         });
-      } else {
-        throw data
-      }
-    }else{
-      throw { error: 'Product is out of stock, sorry' }
-    }
+      } 
+  
 
   } catch ({ error }) {
     Swal.fire({
