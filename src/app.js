@@ -25,12 +25,12 @@ productServer.use(express.json());
 productServer.use(express.static(`${__dirname}/public`));
 productServer.use(express.urlencoded({ extended: true }));
 
-
+//productServer.use(passport.session())
 
 productServer.use(cookieParser())
 initializePassport()
 
-
+// productServer.use(cors());
 productServer.use("/api/payments",paymentsRouter)
 
 database.connect();

@@ -1,25 +1,23 @@
 import dotenv from "dotenv";
-import config from "../config.js";
-
-import { environment } from "./commander.js";
-
 dotenv.config();
+import { environment } from "./commander.js";
 
 
 dotenv.config({
     path: environment === "DEVELOPMENT" ? "./.env.dev" : "./.env.prod",
   }); 
-const {service,port,user,password,accountsid,authtoken,phonenumber}=config
+
 export default {
   nodemailerConfig: {
-    service: service,
-    port: port,
-    user: user,
-    password: password,
+    service: process.env.SERVICE,
+    port: process.env.PORT,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    mail_receptor:process.env.MAIL_RECEPTOR
   },
   twilioConfig: {
-    accountSid: accountsid,
-    authToken: authtoken,
-    phoneNumber:phonenumber,
+    accountSid: process.env.ACCOUNT_SID,
+    authToken: process.env.AUTH_TOKEN,
+    phoneNumber: process.env.PHONE_NUMBER,
   },
 };
