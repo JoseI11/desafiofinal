@@ -132,7 +132,7 @@ export async function getAdminview(req,res){
     res.render('admin', {
       parsedUsers,
       user:req.user,
-      //style: 'styles.css',
+
        title: 'Admin Panel'
     })
   } catch (error) {

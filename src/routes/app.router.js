@@ -32,7 +32,7 @@ const routesFunction = (productServer) => {
   productServer.get("/sms", smsRouter)
   productServer.use("/chat",messagesRouter);
   productServer.use("/api/sessions", sessionsRouter);
-  //productServer.get("/loggerTest",loggerRouter)
+
   productServer.use("/api/products", productsRouter);
   productServer.get("/loggerTest", loggerRouter);
   productServer.use("/api/carts", cartrouter);

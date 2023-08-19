@@ -5,7 +5,7 @@ import __dirname from "./dirname.js";
 import cookieParser from "cookie-parser";
 
 import database from "./db.js";
-//import cors from "cors";
+
 import { winstonLogger } from "./utils/logger.js";
 import routesFunction from "./routes/app.router.js";
 import passport from "passport";
@@ -25,12 +25,12 @@ productServer.use(express.json());
 productServer.use(express.static(`${__dirname}/public`));
 productServer.use(express.urlencoded({ extended: true }));
 
-//productServer.use(passport.session())
+
 
 productServer.use(cookieParser())
 initializePassport()
 
-// productServer.use(cors());
+
 productServer.use("/api/payments",paymentsRouter)
 
 database.connect();

@@ -19,7 +19,7 @@
       {{/if}} --}}
       
        
-      <div><button id="logout">Log out</button></div>
+
     </div>
   </div>
 </nav>
@@ -33,7 +33,7 @@
     <div id="product-{{product._id}}" class="max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 m-1">
       <div>
         {{#each product.thumbnails}}
-        <img src="{{this}}" alt="product image" />
+        <img src="/{{this}}" alt="product image" />
         {{/each}}
       </div>
       <div>

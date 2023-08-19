@@ -322,11 +322,7 @@ export default class UserService {
       deletedUsers = await userRepository.deleteInactiveUsers(inactiveUserIds)
 
       inactiveUsers.forEach(async (user) => {
-        // const mail = {
-        //   to: user.email,
-        //   subject: 'Informatic supplies - Account Deletion Notification',
-        //   html: emailTemplates.accountDeletionEmail(user.name, user.email)
-        // }
+
        await sendEmailtousersdeletedforinactivity(user.email)
       })
 

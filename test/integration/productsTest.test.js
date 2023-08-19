@@ -1,7 +1,7 @@
 import chai from 'chai'
 import supertest from 'supertest'
 
-//import config from '../../src/config'
+
 
 const expect = chai.expect
 const requester = supertest('http://localhost:8080')
@@ -30,13 +30,4 @@ describe('Integration Test suite for Products router', function () {
     })
   
 
-  //   it('Endpoint /api/products/:pid (DELETE) deletes a product successfully with valid product ID input', async function () {
-  //     const { statusCode, ok, _body } = await requester
-  //       .delete(`/api/v1/products/${this.productId}`)
-  //     //  .set('Cookie', [`${this.cookie.name}=${this.cookie.value}`])
-
-  //     expect(statusCode).to.be.ok.and.eq(200)
-  //     expect(_body.payload).to.have.property('deletedCount').eq(1)
-  //     expect(ok).to.be.ok
-  //   })
 })

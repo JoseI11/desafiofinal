@@ -31,7 +31,7 @@ describe("Set de pruebas de integración para modulo de sesiones", function () {
             };
 
             const result = await requester.post("/api/sessions/login").send(mockUser);
-            //console.log(result);
+       
 
             const cookieResult = result.headers["set-cookie"][0];
 

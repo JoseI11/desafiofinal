@@ -1,5 +1,5 @@
-import { Logoutfunction } from "./logoutfunction.js";
-const logout = document.getElementById("logout")
+
+const logout1 = document.getElementById("logout1")
 const formButton = document.getElementById('botonForm');
 let cId = document.getElementById("cid").value;
 
@@ -77,5 +77,27 @@ logout.addEventListener("click", (e) => {
     .catch((error) => console.log(error));
 
 })
-Logoutfunction(logout)
-// });
+alert(logout1)
+logout1.addEventListener("click", (e)=>{
+  fetch(`/api/sessions/logout`, {
+    method: "GET",
+  }) .then(() => {
+    Swal.fire({
+      title: "Logout successful!",
+      text: `Redirecting you to the login`,
+      allowOutsideClick: false,
+
+      icon: "success",
+      timer: 3000,
+     
+      willClose: () => {
+        window.location.href = "/";
+      }
+      
+    });
+  })
+  .catch((error) => console.log(error));
+
+})
+
+

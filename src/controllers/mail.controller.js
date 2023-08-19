@@ -105,7 +105,7 @@ export async function sendEmail(req, res) {
             error: "Failed to send the email",
         });
     }
-    // res.send({ status: "success", result: "mail sent" })
+  
     return res.send({ status: "success", result: userac })
 }
 export async function resetPassword(req, res) {
