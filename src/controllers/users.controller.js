@@ -113,7 +113,7 @@ export const githubCallback = async (req, res) => {
     if (!token) {
       return res
         .status(500)
-        .send({ status: 'error', error: 'Failed to generate JWT token' })
+        .send({ status: 'error', error: 'Failed to generate token' })
     }
 
     return res.cookie(cookieName, token, { httpOnly: true }).redirect('/products')
