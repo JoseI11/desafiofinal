@@ -13,9 +13,9 @@ const connectiondatabase=process.env.DB_URL
 const config ={
     dbUrl: connectiondatabase,
     sessionSecret: secret,
-    clientID:process.env.CLIENT_ID,
-    clientSecret:process.env.CLIENT_SECRET,
-    callbackUrl:process.env.CALLBACK_URL,
+    clientID:"Iv1.0c20b6d46f2dc5aa",
+    clientSecret:"805de59ef6a647448e866dedcac0e76983f555d2",
+    callbackUrl:"https://desafiofinal-lpv4-dev.fl0.io/api/sessions/githubcallback",
     mode:process.env.DEVELOPMENT_MODE,
     jwtSecret:"auto4555",
     cookieName:process.env.COOKIE_NAME,
